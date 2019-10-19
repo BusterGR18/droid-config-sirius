@@ -3,7 +3,7 @@ Description=Droid mount for /system
 Before=local-fs.target systemd-modules-load.service
 
 [Mount]
-What=/mmcblk0p79
+What=/dev/mmcblk0p79
 Where=/system
 Type=ext4
 TimeoutSec=5
