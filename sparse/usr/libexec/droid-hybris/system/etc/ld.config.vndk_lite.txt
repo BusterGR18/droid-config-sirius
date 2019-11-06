@@ -38,12 +38,12 @@ additional.namespaces = sphal,vndk,rs
 ###############################################################################
 namespace.default.isolated = false
 
-namespace.default.permitted.paths += /usr/libexec/droid-hybris/system/${LIB}
-
 namespace.default.search.paths  = /system/${LIB}
 namespace.default.search.paths += /odm/${LIB}
 namespace.default.search.paths += /vendor/${LIB}
 namespace.default.search.paths += /product/${LIB}
+
+namespace.default.permitted.paths += /usr/libexec/droid-hybris/system/${LIB}
 
 namespace.default.asan.search.paths  = /data/asan/system/${LIB}
 namespace.default.asan.search.paths +=           /system/${LIB}
@@ -212,6 +212,8 @@ namespace.default.search.paths += /system/${LIB}/vndk-28
 namespace.default.search.paths += /system/${LIB}/vndk-sp-28
 namespace.default.search.paths += /system/${LIB}
 namespace.default.search.paths += /product/${LIB}
+
+namespace.default.permitted.paths += /usr/libexec/droid-hybris/system/${LIB}
 
 namespace.default.asan.search.paths  = /data/asan/odm/${LIB}
 namespace.default.asan.search.paths +=           /odm/${LIB}
