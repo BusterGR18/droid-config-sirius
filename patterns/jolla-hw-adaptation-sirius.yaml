@@ -21,6 +21,12 @@ Requires:
 - libhybris-libGLESv2
 - libhybris-libwayland-egl
 
+# Telephony
+- ofono-ril-binder-plugin
+
+# Bluetooth
+- bluebinder
+
 # Sensors
 - hybris-libsensorfw-qt5
 
